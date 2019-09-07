@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nhà hàng</title>
+    <style>
+        table,
+        th,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #tableRestaurantMainFood{
+            width: 100%;
+            text-align: center;
+        }
+
+        #tableRestaurantDesserts{
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Danh sách: </h3>
+    Món chính:
+    <br /><br />
+    <div>
+        <table id="tableRestaurantMainFood">
+            <thead>
+                <tr>
+                    <th>Tên món</th>
+                    <th>Số lượng</th>
+                    <th>Đơn giá (vnđ)</th>
+                    <th>Tổng giá (vnđ)</th>
+                    <th>Thay đổi</th>
+                    <th>Tình trạng</th>
+                </tr>
+            </thead>
+           
+        </table>
+    </div>
+    <br />
+    
+    Thêm món mới: <input id="newFood" /> <br />
+    Thêm số lượng: <input id="newAmount" /> <br />
+    Thêm đơn giá: <input id="newPrice" /> <br />
+
+    <button onclick="addFood()">Thêm món vào menu</button>
+
+    </br>
+    </br>
+    </br>
+    </br>
+
+    Món tráng miệng:
+    <br />
+    <br />
+    <div>
+        <table id="tableRestaurantDesserts">
+            <thead>
+                <tr>
+                    <th>Tên món</th>
+                    <th>Số lượng</th>
+                    <th>Đơn giá (vnđ)</th>
+                    <th>Tổng giá (vnđ)</th>
+                    <th>Thay đổi</th>
+                    <th>Tình trạng</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <br/>
+    Thêm món mới: <input id="newDesserts" /> <br />
+    Thêm số lượng: <input id="newDessertsAmount" /> <br />
+    Thêm đơn giá: <input id="newDessertsPrice" /> <br />
+
+    <button onclick="addDesserts()">Thêm món vào menu</button>
+    <br/>
+
+    <script src="monchinh.js"></script>
+    <script src="montrangmieng.js"></script>
+</body>
+
+</html>
